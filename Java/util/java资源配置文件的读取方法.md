@@ -1,5 +1,6 @@
+# java资源配置文件的读取方法
 代码如下：
-```
+``` java
             public class PropertiesUtilsTest {
                 public static void main() throws Exception {
                     Properties properties = new Properties();
