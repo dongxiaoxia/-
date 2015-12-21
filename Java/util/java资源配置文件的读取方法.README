@@ -1,16 +1,16 @@
-´úÂëÈçÏÂ£º
+ä»£ç å¦‚ä¸‹ï¼š
+```
             public class PropertiesUtilsTest {
-
                 public static void main() throws Exception {
                     Properties properties = new Properties();
 
-                    properties.load(PropertiesUtilsTest.class.getResourceAsStream("/jdbc.properties"));//Â·¾¶Ç°Ãæ¼Ó"/"±íÊ¾classpath¾ø¶ÔÂ·¾¶¸ùÏÂ»ñÈ¡£¬²»¼Ó"/"±íÊ¾µ±Ç°ÀàµÄÂ·¾¶
-                    //¾²Ì¬·½·¨²»ÄÜÓÃthis
+                    properties.load(PropertiesUtilsTest.class.getResourceAsStream("/jdbc.properties"));//è·¯å¾„å‰é¢åŠ "/"è¡¨ç¤ºclasspathç»å¯¹è·¯å¾„æ ¹ä¸‹è·å–ï¼Œä¸åŠ "/"è¡¨ç¤ºå½“å‰ç±»çš„è·¯å¾„
+                    //é™æ€æ–¹æ³•ä¸èƒ½ç”¨this
                     //properties.load(this.getClass().getResourceAsStream("/jdbc.properties"));
 
                     Properties properties1 = new Properties(properties);
-                    properties1.load(PropertiesUtilsTest.class.getClassLoader().getResourceAsStream("jdbc.properties"));//Ä¬ÈÏ´ÓClassPath¸ùÏÂ»ñÈ¡£¬²»ÄÜÒÔ¡¯/'¿ªÍ·
-                    //¾²Ì¬·½·¨²»ÄÜÓÃthis
+                    properties1.load(PropertiesUtilsTest.class.getClassLoader().getResourceAsStream("jdbc.properties"));//é»˜è®¤ä»ClassPathæ ¹ä¸‹è·å–ï¼Œä¸èƒ½ä»¥â€™/'å¼€å¤´
+                    //é™æ€æ–¹æ³•ä¸èƒ½ç”¨this
                     //properties1.load(this.getClass().getClassLoader().getResourceAsStream("jdbc.properties"));
 
                     Properties properties2 = new Properties();
@@ -19,43 +19,43 @@
                     System.out.println(properties);
                 }
             }
+```
 
+å…¶æ¬¡ï¼ŒgetResourceAsStream ç”¨æ³•å¤§è‡´æœ‰ä»¥ä¸‹å‡ ç§ï¼š
 
-Æä´Î£¬getResourceAsStream ÓÃ·¨´óÖÂÓĞÒÔÏÂ¼¸ÖÖ£º
+ç¬¬ä¸€ï¼š è¦åŠ è½½çš„æ–‡ä»¶å’Œ.classæ–‡ä»¶åœ¨åŒä¸€ç›®å½•ä¸‹ï¼Œä¾‹å¦‚ï¼šcom.x.y ä¸‹æœ‰ç±»me.class ,åŒæ—¶æœ‰èµ„æºæ–‡ä»¶myfile.xml
 
-µÚÒ»£º Òª¼ÓÔØµÄÎÄ¼şºÍ.classÎÄ¼şÔÚÍ¬Ò»Ä¿Â¼ÏÂ£¬ÀıÈç£ºcom.x.y ÏÂÓĞÀàme.class ,Í¬Ê±ÓĞ×ÊÔ´ÎÄ¼şmyfile.xml
-
-ÄÇÃ´£¬Ó¦¸ÃÓĞÈçÏÂ´úÂë£º
-
-me.class.getResourceAsStream("myfile.xml");
-
-µÚ¶ş£ºÔÚme.classÄ¿Â¼µÄ×ÓÄ¿Â¼ÏÂ£¬ÀıÈç£ºcom.x.y ÏÂÓĞÀàme.class ,Í¬Ê±ÔÚ com.x.y.file Ä¿Â¼ÏÂÓĞ×ÊÔ´ÎÄ¼şmyfile.xml
-
-ÄÇÃ´£¬Ó¦¸ÃÓĞÈçÏÂ´úÂë£º
-
-me.class.getResourceAsStream("file/myfile.xml");
-
-µÚÈı£º²»ÔÚme.classÄ¿Â¼ÏÂ£¬Ò²²»ÔÚ×ÓÄ¿Â¼ÏÂ£¬ÀıÈç£ºcom.x.y ÏÂÓĞÀàme.class ,Í¬Ê±ÔÚ com.x.file Ä¿Â¼ÏÂÓĞ×ÊÔ´ÎÄ¼şmyfile.xml
-
-ÄÇÃ´£¬Ó¦¸ÃÓĞÈçÏÂ´úÂë£º
-
-me.class.getResourceAsStream("/com/x/file/myfile.xml");
-
-×Ü½áÒ»ÏÂ£¬¿ÉÄÜÖ»ÊÇÁ½ÖÖĞ´·¨
-
-µÚÒ»£ºÇ°ÃæÓĞ ¡°   / ¡±
-
-¡° / ¡±´ú±íÁË¹¤³ÌµÄ¸ùÄ¿Â¼£¬ÀıÈç¹¤³ÌÃû½Ğ×ömyproject£¬¡° / ¡±´ú±íÁËmyproject
-
-me.class.getResourceAsStream("/com/x/file/myfile.xml");
-
-µÚ¶ş£ºÇ°ÃæÃ»ÓĞ ¡°   / ¡±
-
-´ú±íµ±Ç°ÀàµÄÄ¿Â¼
+é‚£ä¹ˆï¼Œåº”è¯¥æœ‰å¦‚ä¸‹ä»£ç ï¼š
 
 me.class.getResourceAsStream("myfile.xml");
 
+ç¬¬äºŒï¼šåœ¨me.classç›®å½•çš„å­ç›®å½•ä¸‹ï¼Œä¾‹å¦‚ï¼šcom.x.y ä¸‹æœ‰ç±»me.class ,åŒæ—¶åœ¨ com.x.y.file ç›®å½•ä¸‹æœ‰èµ„æºæ–‡ä»¶myfile.xml
+
+é‚£ä¹ˆï¼Œåº”è¯¥æœ‰å¦‚ä¸‹ä»£ç ï¼š
+
 me.class.getResourceAsStream("file/myfile.xml");
 
-×îºó£¬×Ô¼ºµÄÀí½â£º
-getResourceAsStream¶ÁÈ¡µÄÎÄ¼şÂ·¾¶Ö»¾ÖÏŞÓë¹¤³ÌµÄÔ´ÎÄ¼ş¼ĞÖĞ£¬°üÀ¨ÔÚ¹¤³Ìsrc¸ùÄ¿Â¼ÏÂ£¬ÒÔ¼°Àà°üÀïÃæÈÎºÎÎ»ÖÃ£¬µ«ÊÇÈç¹ûÅäÖÃÎÄ¼şÂ·¾¶ÊÇÔÚ³ıÁËÔ´ÎÄ¼ş¼ĞÖ®ÍâµÄÆäËûÎÄ¼ş¼ĞÖĞÊ±£¬¸Ã·½·¨ÊÇÓÃ²»ÁËµÄ¡£
+ç¬¬ä¸‰ï¼šä¸åœ¨me.classç›®å½•ä¸‹ï¼Œä¹Ÿä¸åœ¨å­ç›®å½•ä¸‹ï¼Œä¾‹å¦‚ï¼šcom.x.y ä¸‹æœ‰ç±»me.class ,åŒæ—¶åœ¨ com.x.file ç›®å½•ä¸‹æœ‰èµ„æºæ–‡ä»¶myfile.xml
+
+é‚£ä¹ˆï¼Œåº”è¯¥æœ‰å¦‚ä¸‹ä»£ç ï¼š
+
+me.class.getResourceAsStream("/com/x/file/myfile.xml");
+
+æ€»ç»“ä¸€ä¸‹ï¼Œå¯èƒ½åªæ˜¯ä¸¤ç§å†™æ³•
+
+ç¬¬ä¸€ï¼šå‰é¢æœ‰ â€œ   / â€
+
+â€œ / â€ä»£è¡¨äº†å·¥ç¨‹çš„æ ¹ç›®å½•ï¼Œä¾‹å¦‚å·¥ç¨‹åå«åšmyprojectï¼Œâ€œ / â€ä»£è¡¨äº†myproject
+
+me.class.getResourceAsStream("/com/x/file/myfile.xml");
+
+ç¬¬äºŒï¼šå‰é¢æ²¡æœ‰ â€œ   / â€
+
+ä»£è¡¨å½“å‰ç±»çš„ç›®å½•
+
+me.class.getResourceAsStream("myfile.xml");
+
+me.class.getResourceAsStream("file/myfile.xml");
+
+æœ€åï¼Œè‡ªå·±çš„ç†è§£ï¼š
+getResourceAsStreamè¯»å–çš„æ–‡ä»¶è·¯å¾„åªå±€é™ä¸å·¥ç¨‹çš„æºæ–‡ä»¶å¤¹ä¸­ï¼ŒåŒ…æ‹¬åœ¨å·¥ç¨‹srcæ ¹ç›®å½•ä¸‹ï¼Œä»¥åŠç±»åŒ…é‡Œé¢ä»»ä½•ä½ç½®ï¼Œä½†æ˜¯å¦‚æœé…ç½®æ–‡ä»¶è·¯å¾„æ˜¯åœ¨é™¤äº†æºæ–‡ä»¶å¤¹ä¹‹å¤–çš„å…¶ä»–æ–‡ä»¶å¤¹ä¸­æ—¶ï¼Œè¯¥æ–¹æ³•æ˜¯ç”¨ä¸äº†çš„ã€‚
