@@ -1,3 +1,8 @@
+#用freemarker读取java配置文件
+    配置文件主要存储那些固定的而又不需要存档在数据库中的配置属性，但是又不够灵活性，通过与Freemarker结合，大大提高了配置的可用性。
+
+###主要代码：
+```
 package xyz.dongxiaoxia.utils;
 
 import freemarker.cache.StringTemplateLoader;
@@ -104,7 +109,7 @@ public class MessageTemplateUtils {
         System.out.println(MessageTemplateUtils.getUserRegisterTemplate("陈文东", "***公司", "1231312", "4234234"));
     }
 }
-
+'''
 
 ###模版配置文件messageTemplate.properties：
 ```
