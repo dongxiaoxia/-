@@ -106,10 +106,11 @@ public class MessageTemplateUtils {
 }
 
 
-配置文件：
+#模版配置文件messageTemplate.properties：
+```
 #短讯、邮件等消息通知模版配置
 
 #用户注册
 user_register=尊敬的${userName}用户您好，${companyName}在“***”将您设为企业成员，您已成功注册并激活目标易帐号，登录帐号：${loginId}，密码：${password}，请至http://www.dongxiaoxia.xyz或关注“***”微信公众号，下载安装***客户端。一款集工作管理与企业社交的APP,欢迎您的使用！【***】
-
+```
 
