@@ -106,7 +106,7 @@ public class MessageTemplateUtils {
 }
 
 
-#模版配置文件messageTemplate.properties：
+###模版配置文件messageTemplate.properties：
 ```
 #短讯、邮件等消息通知模版配置
 
