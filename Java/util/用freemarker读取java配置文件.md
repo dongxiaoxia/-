@@ -134,3 +134,21 @@ public class MessageTemplateUtils {
         System.out.println(MessageTemplateUtils.getAddAdminTemplate("陈文东", "***该in公司"));
     }
 }
+
+
+配置文件：
+#短讯、邮件等消息通知模版配置
+
+#用户注册
+user_register=尊敬的${userName}用户您好，${companyName}在“目标易”将您设为企业成员，您已成功注册并激活目标易帐号，登录帐号：${loginId}，密码：${password}，请至http://www.mubiaoyi.com或关注“目标易”微信公众号，下载安装目标易客户端。一款集工作管理与企业社交的APP,欢迎您的使用！【目标易】
+
+
+#企业注册
+company_register=尊敬的${userName}用户您好，感谢您注册“目标易”企业帐号。登录帐号：${loginId}，密码：${password}。请至http://www.mubiaoyi.com或关注“目标易”微信公众号，下载安装目标易客户端。一款集工作管理与企业社交的APP,欢迎您的使用！【目标易】
+
+#成员单位
+sub_company_create=尊敬的${userName}用户您好，${companyName}在“目标易”将您设为成员单位，您已成功注册并激活目标易帐号，登录帐号：${loginId}，密码：${password}，请至http://www.mubiaoyi.com或关注“目标易”微信公众号，下载安装目标易客户端。一款集工作管理与企业社交的APP,欢迎您的使用！【目标易】
+
+#添加管理员
+add_admin=尊敬的${userName}用户您好，您已被设为${companyName}的企业管理员，可登录目标易网站www.mubiaoyi.com查看并管理您的企业信息。请至http://www.mubiaoyi.com或关注“目标易”微信公众号，下载安装目标易客户端。一款集工作管理与企业社交的APP,欢迎您的使用！【目标易】
+
