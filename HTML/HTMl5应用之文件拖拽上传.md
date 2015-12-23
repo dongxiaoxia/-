@@ -1,7 +1,5 @@
 #HTMl5应用之文件拖拽上传
 
-@(java)[html|html5|文件上传]
-
 一个简单的HTML5多文件上传例子
 ```html
 <!DOCTYPE HTML>
