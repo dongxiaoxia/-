@@ -1,5 +1,4 @@
 #SpringMVC Controller接收List< Map>或List< Object>
-@(Spring)[springmvc]
 google了一个下午，暂时找到两种解决办法，虽然这两种方法都不是很方便，暂时先这么用着吧！
 ##1.全部参数封装为一个对象
 ###controller类
