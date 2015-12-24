@@ -1,5 +1,4 @@
 #如何成为一个牛掰的Java大神？
-@(Java)[Java|学习路线]
 
 >来自：HollisChuang's Blog
 链接：http://www.hollischuang.com/archives/489
